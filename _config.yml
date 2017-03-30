@@ -1,3 +1,4 @@
 # Permalinks
 permalink:           /:title/github-pages
-
+kramdown:
+  input: GFM
