@@ -1,4 +1,7 @@
 # Permalinks
-permalink:           /:title/github-pages
+permalink: /:title/github-pages
+title: "向往自由的程序猿"
+auth: "放牛娃"
+describe: "学不可以已"
 kramdown:
   input: GFM
