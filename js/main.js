@@ -17,7 +17,7 @@ $("body").delegate("#slibarIcon", "click", function () {
 
 		$("#slibarIcon").removeClass("glyphicon glyphicon-remove"); 
 		$("#slibarIcon").addClass("glyphicon glyphicon-menu-hamburger"); 
-		
+		$("#sidebar").hide(); 
 	}
 	
 })

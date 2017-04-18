@@ -224,3 +224,73 @@ body{
 .content{
 	width: 760px !important;
 }
+
+.indexPageDiv{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.indexPageDiv img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.indexPageDiv p{
+    color: #515151;
+    font-size: 18px;
+}
+
+.indexPageDiv p a{
+    color: #333;
+    text-decoration: underline;
+}
+
+.indexPageDiv .classify{
+    color: #9a9a9a;
+    font-size: 0.8rem;
+    padding: 1px 2px;
+    border-radius: 3px;
+    border:1px solid #e0e0e0;
+}
+
+.indexPageDiv .dateStringDiv{
+    color: #9a9a9a;
+    font-size: 0.8rem;
+}
+
+.pagination{
+    width: 100%;
+    text-align: center;
+}
+
+.pagination .pagination-button{
+    padding: 15px 45px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #999;
+}
+
+.pagination .pagination-active{
+    text-decoration: none;
+    color: black;
+}
+
+.pagination .pagination-active:hover{
+    background-color: #e0e0e0;
+}
+
+.classify{
+    color: #9a9a9a;
+    font-size: 0.8rem;
+    padding: 1px 2px;
+    border-radius: 3px;
+    border:1px solid #e0e0e0;
+}
+
+.pageContent{
+    margin-top: 10px;
+}
