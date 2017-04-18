@@ -15,7 +15,7 @@ body{
 }
 
 .headDiv .headContent{
-	width: 760px;
+	/*width: 760px;*/
 }
 
 .headDiv img{
@@ -222,7 +222,7 @@ body{
 }
 
 .content{
-	width: 760px !important;
+	/*width: 760px !important;*/
 }
 
 .indexPageDiv{
