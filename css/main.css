@@ -50,11 +50,12 @@ body{
 .sidebar{
 	width: 280px;
 	background-color: #F5F5F5;
-	position: absolute;
+	position: fixed;
 	top: 0px;
-	right: 0px;
+	right: -280px;
 	display: none;
-	height: 100%;
+	height: auto;
+    overflow-y: auto;
 }
 
 .sidebarMoveToLeft{
@@ -63,38 +64,26 @@ body{
 }
 
 @-webkit-keyframes sidebarToLeft {
-    from {
-        -webkit-transform: translateX(280px);
-    }
     to {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(-280px);
     }
 }
 
 @-moz-keyframes sidebarToLeft {
-    from {
-        -webkit-transform: translateX(280px);
-    }
     to {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(-280px);
     }
 }
 
 @-ms-keyframes sidebarToLeft {
-    from {
-        -webkit-transform: translateX(280px);
-    }
     to {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(-280px);
     }
 }
 
 @keyframes sidebarToLeft {
-    from {
-        transform: translateX(280px);
-    }
     to {
-        transform: translateX(0);
+        transform: translateX(-280px);
     }
 }
 
@@ -104,36 +93,24 @@ body{
 }
 
 @-webkit-keyframes contentToLeft {
-    from {
-        -webkit-transform: translateX(0);
-    }
     to {
         -webkit-transform: translateX(-280px);
     }
 }
 
 @-moz-keyframes contentToLeft {
-    from {
-        -webkit-transform: translateX(0);
-    }
     to {
         -webkit-transform: translateX(-280px);
     }
 }
 
 @-ms-keyframes contentToLeft {
-    from {
-        -webkit-transform: translateX(0);
-    }
     to {
         -webkit-transform: translateX(-280px);
     }
 }
 
 @keyframes contentToLeft {
-    from {
-        transform: translateX(0);
-    }
     to {
         transform: translateX(-280px);
     }
@@ -146,37 +123,37 @@ body{
 
 @-webkit-keyframes sidebarToRight {
     from {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(-280px);
     }
     to {
-        -webkit-transform: translateX(280px);
+        -webkit-transform: translateX(0);
     }
 }
 
 @-moz-keyframes sidebarToRight {
     from {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(-280px);
     }
     to {
-        -webkit-transform: translateX(280px);
+        -webkit-transform: translateX(0);
     }
 }
 
 @-ms-keyframes sidebarToRight {
     from {
-        -webkit-transform: translateX(0);
+        -webkit-transform: translateX(-280px);
     }
     to {
-        -webkit-transform: translateX(280px);
+        -webkit-transform: translateX(0);
     }
 }
 
 @keyframes sidebarToRight {
     from {
-        transform: translateX(0);
+        transform: translateX(-280px);
     }
     to {
-        transform: translateX(280px);
+        transform: translateX(0);
     }
 }
 
