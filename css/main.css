@@ -54,8 +54,13 @@ body{
 	top: 0px;
 	right: -280px;
 	display: none;
-	height: auto;
+	height: 100%;
     overflow-y: auto;
+}
+
+.sidebar:focus{
+        /*去除获得焦点时蓝色边框*/
+        outline:none;
 }
 
 .sidebarMoveToLeft{
