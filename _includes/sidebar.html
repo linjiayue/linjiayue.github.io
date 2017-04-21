@@ -1,3 +1,43 @@
 <div id="sidebar" tabindex="0" class="sidebar sidebarMoveToRight">
-	待完善。。。
+	<div class="personalImageDiv">
+		<img src="{{ site.baseurl }}/images/portrait.jpeg" />
+	</div>
+	<div class="personalInfoDiv">
+		<div>
+			个人标签&nbsp;
+			<span id="personalLabel">
+				{% for personaLabel in site.personalLabels %}
+					<b class="hiddenB">{{personaLabel}}</b>
+				{% endfor %}
+			</span>
+		</div>
+		<div class="followDiv">
+			Follow me:&nbsp;<a href="https://github.com/linjiayue" target="_blank"><img src="{{ site.baseurl }}/images/github.png" /></a>
+		</div>
+	</div>
+	<div class="navDiv">
+		<ul class="list-unstyled">
+			<a href="/">
+				<li class="{% if page.url == '/' %}active{% endif %}">
+					Home
+				</li>
+			</a>
+			<a href="/">
+				<li class="{% if page.url == '/cv' %}active{% endif %}">
+					简历
+				</li>
+			</a>
+		</ul>
+		<div class="labelYunDiv">
+			文章分类
+			<div class="labelYun">
+				{% for pageLabel in site.pagelLabels %}
+					<a href="javascript:void(0)"><span>{{pageLabel.name}}</span></a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="versionDiv">
+		&copy;2017 lin
+	</div>
 </div>

@@ -3,6 +3,22 @@ permalink: /:title/github-pages
 title: "向往自由的程序猿"
 auth: "林跑跑"
 describe: "学不可以已"
+personalLabels: ["Java","AngularJs"]
+pagelLabels:
+- name: "测试"
+  url: "/test"
+- name: "未分类"
+  url: "/test"
+- name: "Java"
+  url: "/test"
+- name: "AngularJs"
+  url: "/test"
+- name: "Hadoop"
+  url: "/test"
+- name: "Linux"
+  url: "/test"
+- name: "总结"
+  url: "/test"
 paginate: 5
 kramdown:
   input: GFM

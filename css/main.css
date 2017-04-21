@@ -49,7 +49,8 @@ body{
 
 .sidebar{
 	width: 280px;
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
+    background-color: #6a9fb5;
 	position: fixed;
 	top: 0px;
 	right: -280px;
@@ -201,6 +202,116 @@ body{
     to {
         transform: translateX(0);
     }
+}
+
+.sidebar .personalImageDiv{
+    width: 100%;
+    text-align: center;
+    height: 260px;
+    line-height: 260px;
+}
+
+.sidebar .personalImageDiv img{
+    width: 220px;
+    height: 220px;
+    vertical-align: middle;
+}
+
+.sidebar .personalInfoDiv{
+    width: 100%;
+    color: #c0d7e0;
+}
+
+.sidebar .personalInfoDiv div{
+    padding-left: 30px;
+
+}
+.sidebar .personalInfoDiv div b{
+    color: white;
+}
+
+.sidebar .personalInfoDiv div .hiddenB{
+    display: none;
+    animation: slideOutUp 0.6s;
+    -webkit-animation: slideOutUp 0.6s;
+}
+
+.sidebar .personalInfoDiv div .showB{
+    display: inline-block;
+    animation: flash 0.6s;
+    -webkit-animation: flash 0.6s;
+}
+
+.sidebar .personalInfoDiv .followDiv{
+    margin-top: 10px;
+}
+
+.sidebar .personalInfoDiv .followDiv img{
+    width: 14px;
+    height: 14px;
+}
+
+.sidebar a{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .navDiv{
+    width: 100%;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar .navDiv ul{
+    text-align: left;
+    font-size: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+}
+
+.sidebar .navDiv ul li{
+    line-height: 40px;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+.sidebar .navDiv ul li:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.sidebar .navDiv .active{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.sidebar .labelYunDiv{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 15px;
+}
+
+.sidebar .labelYunDiv .labelYun{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.sidebar .labelYunDiv .labelYun span{
+    border: 1px solid #cccccc;
+    padding: 1px 4px;
+    border-radius: 3px;
+    display: -webkit-inline-box;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.sidebar .versionDiv{
+    padding-left: 30px;
+    color: #c0d7e0;
+    margin-top: 30px;
 }
 
 .content{
