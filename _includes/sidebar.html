@@ -31,8 +31,9 @@
 		<div class="labelYunDiv">
 			文章分类
 			<div class="labelYun">
-				{% for pageLabel in site.pagelLabels %}
-					<a href="javascript:void(0)"><span>{{pageLabel.name}}</span></a>
+				<a href="/categorieIndex.html"><span>全部</span></a>
+				{% for category in site.categories %}
+					<a href="/categorieIndex.html?categorie={{ category | first }}"><span>{{category | first}}&nbsp;({{ category | last | size }})</span></a>
 				{% endfor %}
 			</div>
 		</div>

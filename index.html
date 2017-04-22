@@ -1,18 +1,22 @@
 ---
 layout: default
-title: 我的博客
+title: dasboard
 ---
-<!-- <p>最新文章</p>
-<ul>
-  {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul> -->
+<!-- {% for category in site.categories %}
+<h2>{{ category | first }}</h2>
+</span>{{ category | last | size }}</span>
+<ul class="arc-list">
+    {% for post in category.last %}
+        <li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endfor %} -->
+
 {% for post in paginator.posts %}
 	<div class="indexPageDiv">
 		<h1>{{ post.title }}</h1>
 	  	{% if post.image %}
-	    	<img src="{{ site.baseurl }}images/{{ post.image }}">
+	    	<img src="{{ site.baseurl }}/images/{{ post.image }}">
 	  	{% endif %}
 	  	<p>
 	    	{{ post.content | strip_html | truncate: 350 }} <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>

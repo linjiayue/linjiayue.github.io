@@ -308,6 +308,10 @@ body{
     margin-right: 10px;
 }
 
+.sidebar .labelYunDiv .labelYun span:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
 .sidebar .versionDiv{
     padding-left: 30px;
     color: #c0d7e0;
@@ -386,4 +390,37 @@ body{
 
 .pageContent{
     margin-top: 10px;
+}
+
+.categorieList{
+    list-style-type: circle;
+}
+
+.categorieList a:hover{
+    text-decoration: none;
+}
+
+.categorieList li{
+    font-size: 18px;
+    line-height: 40px;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+.categorieList li:hover{
+    font-size: 20px;
+    /*line-height: 50px;*/
+}
+
+.categorieList li span{
+    font-size: 12px;
+    color: #9a9a9a;
+}
+
+.specificDiv{
+    display: none;
+}
+
+.allDiv{
+    display: none;
 }

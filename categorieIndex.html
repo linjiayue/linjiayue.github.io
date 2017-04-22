@@ -1,0 +1,54 @@
+---
+layout: default
+title: categorieIndex
+---
+<div class="specificDiv" id="specificDiv">
+	<h1 id="categorieName"></h1>
+	<ul id="categorieList" class="categorieList">
+	</ul>
+</div>
+<div class="allDiv" id="allDiv">
+	{% for category in site.categories %}
+		<h2>{{ category | first }}</h2>
+		<ul class="categorieList">
+		    {% for post in category.last %}
+		        <a href="{{ post.url }}"><li>{{ post.title }}&nbsp;<span>{{ post.date | date_to_string}}</span></li></a>
+		    {% endfor %}
+		</ul>
+	{% endfor %}
+</div>
+
+</div>
+<script type="text/javascript">
+	function getQueryString(name) { 
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+		var r = window.location.search.substr(1).match(reg); 
+		if (r != null) return decodeURI(r[2]); 
+		return null;
+	}
+
+	function appendCategorieData(data){
+		$("#categorieList").append(" <a href='"+ data.url +"'><li>"+ data.title +" <span>"+  data.date +"</span></li></a>");
+	}
+
+	var categorie = getQueryString("categorie");
+
+	$("#categorieName").html(categorie);
+
+    var dataStr = '{ {% for cat in site.categories %}{% if cat[0] != site.categories.first[0] %},{% endif %}"{{ cat[0] }}":[{% for post in cat[1] %}{% if post != cat[1].first %},{% endif %}{"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date_to_string}}"}{% endfor %}]{% endfor %} }';
+    
+    var categoriesDatas = JSON.parse(dataStr);
+    var categorieDatas;
+    if(!categorie){
+    	$("#allDiv").show();
+    }else{
+    	$("#specificDiv").show();
+    	categorieDatas = categoriesDatas[categorie];
+    }
+    console.info(categorieDatas);
+    categorieDatas.forEach(function(data){
+    	appendCategorieData(data);
+    });
+
+    // console.info(categoriesDatas);
+  </script>
