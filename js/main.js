@@ -1,20 +1,20 @@
-//分类内容全局变量
-var categoriesDatas;
+// //分类内容全局变量
+// var categoriesDatas;
 
-//设置全局分类对象指
-function setCategoriesDatas(categoriesDatasStr){
-	if(!categoriesDatas){
-		categoriesDatas = JSON.parse(categoriesDatasStr);
-		console.info(categoriesDatas);
-	}
-}
-//根据分类名称获得具体内容
-function getDataObj(categorie){
-	if(!categoriesDatas){
-		return categoriesDatas[categorie];
-	}
-	return [];
-}
+// //设置全局分类对象指
+// function setCategoriesDatas(categoriesDatasStr){
+// 	if(!categoriesDatas){
+// 		categoriesDatas = JSON.parse(categoriesDatasStr);
+// 		console.info(categoriesDatas);
+// 	}
+// }
+// //根据分类名称获得具体内容
+// function getDataObj(categorie){
+// 	if(!categoriesDatas){
+// 		return categoriesDatas[categorie];
+// 	}
+// 	return [];
+// }
 
 $(function(){
 	//个人标签遍历效果
